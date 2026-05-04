@@ -1,7 +1,7 @@
 "use client"
 
 import type React from "react"
-import { Environment, SoftShadows } from "@react-three/drei"
+import { Environment } from "@react-three/drei"
 import type { SceneProps } from "./types"
 import { LargePlane } from "../large-plane"
 import { Platform } from "../platform"
@@ -48,7 +48,6 @@ export const Scene: React.FC<SceneProps> = ({
 
   return (
     <>
-      <SoftShadows size={25} samples={16} focus={0.5} />
       <LargePlane />
       <Platform />
 
